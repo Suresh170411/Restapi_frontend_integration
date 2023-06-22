@@ -10,16 +10,18 @@ function allData(){
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
+                <tr>
                     <td>${student.roll}</td> 
                     <td>${student.name}</td>
                     <td>${student.age}</td>
                     <td>${student.marks}</td>
                     <td>
-                        <button button style ="background-color:yellow" onclick="updateRecord('${student.name}','${student.age}','${student.marks}')">UPDATE</button> 
+                        <button class="button" onclick="updateRecord('${student.name}','${student.age}','${student.marks}')">UPDATE</button> 
                     </td>
                     <td>
-                        <button style ="background-color:red" onclick="deleteRecord(${student.roll})">DELETE</button> 
+                        <button class="delete" onclick="deleteRecord(${student.roll})">DELETE</button> 
                     </td>
+                </tr>
                 `;
                 studentTableBody.appendChild(row);
                 

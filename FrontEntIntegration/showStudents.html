@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All students</title>
+	<style>
+		table,tr,th,td{
+			border: 1px solid black;
+		}
+
+		table{
+			width: 60%;
+			margin: auto;
+		}
+		.button{
+			transition-duration: 0.4s;
+			background-color: rgb(4, 172, 172);
+		}
+		.button:hover{
+			background-color: rgb(148, 231, 212);
+			color: white;
+			cursor: pointer;
+		}
+		.delete{
+			transition-duration: 0.4s;
+			background-color: red;
+		}
+		.delete:hover{
+			background-color: rgb(238, 82, 82);
+			color: white;
+			cursor: pointer;
+		}
+	</style>
 </head>
-<body bgcolor="gray" onload="allData();">
+<body onload="allData();">
     <h1 style="text-align: center">All Student Details</h1>
 
     <table>

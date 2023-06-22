@@ -21,6 +21,7 @@ function registerStudent(){
         if(response.status == 201 | response.status == 200){
             response.json().then(data => {
                 alert("Student sucessfully registered with Roll: "+data.roll)
+                location.reload();
             });
         }else{
             response.json().then(data => alert(data.message));
