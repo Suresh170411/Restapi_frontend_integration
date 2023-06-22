@@ -32,8 +32,31 @@
 			cursor: pointer;
 		}
 	</style>
+
+	<style>
+		#navbar{
+			display: flex;
+			gap: 20px;
+		}
+		a{
+			text-decoration: none;
+		}
+		#navbar>div{
+			border: 1px solid red;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	</style>
 </head>
 <body onload="allData();">
+	<div id="navbar">
+        <div>
+            <h3><a href="./studentRegistration.html">Register student</a></h3>
+        </div>
+        <div>
+            <h3><a href="./showStudents.html">Show all students</a></h3>
+        </div>
+    </div>
     <h1 style="text-align: center">All Student Details</h1>
 
     <table>

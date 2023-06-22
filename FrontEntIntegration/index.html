@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <style>
+        #navbar{
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #navbar>div{
+            border: 1px solid red;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Student management system</h1>
-
-    <div>
+    <div id="navbar">
         <div>
-            <h3><a href="./studentRegistration.html">register student</a></h3>
+            <h3><a href="./studentRegistration.html">Register student</a></h3>
         </div>
         <div>
-            <h3><a href="./showStudents.html">show all students</a></h3>
+            <h3><a href="./showStudents.html">Show all students</a></h3>
         </div>
     </div>
+
+    <h1>Welcome to Student management system</h1>
+    
 </body>
 </html>

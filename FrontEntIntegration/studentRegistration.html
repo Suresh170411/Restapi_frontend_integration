@@ -5,27 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        #navbar{
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #navbar>div{
+            border: 1px solid red;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #button{
+            margin-top: 7px;
+            background-color: rgb(5, 190, 246);
+            border: 1px solid transparent;
+            border-radius: 5px;
+            color: white;
+            padding: 7px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: block;
+            margin-left: 30px;
+            font-weight: bold;
+            transition-duration: 0.4s;
+        }
+        #button:hover{
+            cursor: pointer;
+            background-color: rgb(24, 128, 128);
+        }
+    </style>
+
 </head>
 <body>
-    <h3>Please enter the details of the student!</h3>
 
-    <div id="registration_form">
-        <form action="">
-            <label for="name">Enter Name</label>
-            <input type="text" id="name">
-
-            <label for="roll">Enter Roll Number</label>
-            <input type="number" id="roll">
-
-            <label for="age">Enter Age</label>
-            <input type="number" id="age">
-
-            <label for="marks">Enter Total Marks</label>
-            <input type="number" id="marks">
-
-            <input type="button" value="Register" onclick="registerStudent()"/>
-        </form>
+    <div id="navbar">
+        <div>
+            <h3><a href="./studentRegistration.html">Register student</a></h3>
+        </div>
+        <div>
+            <h3><a href="./showStudents.html">Show all students</a></h3>
+        </div>
     </div>
+
+    <div id="container" style="border: 3px solid teal; height: 300px; width: 30%; margin: auto; margin-top: 20px;">
+        <h3 style="text-align: center;">Please enter the details of the student!</h3>
+
+        <div id="registration_form">
+            <form action="">
+                <label for="name">Enter Name</label>
+                <input type="text" id="name">
+
+                <label for="roll">Enter Roll Number</label>
+                <input type="number" id="roll">
+
+                <label for="age">Enter Age</label>
+                <input type="number" id="age">
+
+                <label for="marks">Enter Total Marks</label>
+                <input type="number" id="marks">
+
+                <input id="button" type="button" value="Register" onclick="registerStudent()"/>
+            </form>
+        </div>
+    </div>
+
+    
 </body>
 </html>
 
