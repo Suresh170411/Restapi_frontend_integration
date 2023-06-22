@@ -9,17 +9,21 @@ function allData(){
                data.forEach(student =>{
 
                 const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${student.roll}</td> 
-        <td>${student.name}</td>
-        <td>${student.age}</td>
-        <td>${student.marks}</td>
-        <td><button button style ="background-color:yellow" onclick="updateRecord('${student.name}','${student.age}','${student.marks}')">UPDATE</button> </td>
-        <td><button style ="background-color:red" onclick="deleteRecord(${student.roll})">DELETE</button> </td>
-      `;
-      studentTableBody.appendChild(row);
-    
-     })})
+                row.innerHTML = `
+                    <td>${student.roll}</td> 
+                    <td>${student.name}</td>
+                    <td>${student.age}</td>
+                    <td>${student.marks}</td>
+                    <td>
+                        <button button style ="background-color:yellow" onclick="updateRecord('${student.name}','${student.age}','${student.marks}')">UPDATE</button> 
+                    </td>
+                    <td>
+                        <button style ="background-color:red" onclick="deleteRecord(${student.roll})">DELETE</button> 
+                    </td>
+                `;
+                studentTableBody.appendChild(row);
+                
+                })})
         }else{
             response.json().then(data => alert(data.message));
         }
