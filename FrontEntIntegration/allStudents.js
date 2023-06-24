@@ -1,3 +1,5 @@
+// function for displaying all the sutdent details
+
 function allData(){
 
     const studentTableBody = document.getElementById('student-table-body');
